@@ -1,0 +1,138 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Advisory Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+</head>
+<body>
+    
+    <header>
+        <h1>Financial Advisory Services</h1>
+        <p>Your partner in financial success</p>
+    </header>
+
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We provide expert financial advice to help you manage loans, investments, and retirement planning.</p>
+    </section>
+
+    
+    <section id="calculator">
+        <h2>Loan and Interest Calculator</h2>
+        <form id="loanCalculator">
+            <label>Loan Amount: <input type="number" id="loanAmount" required></label>
+            <label>Interest Rate (%): <input type="number" id="interestRate" step="0.01" required></label>
+            <label>Loan Duration (Years): <input type="number" id="loanDuration" required></label>
+            <button type="button" onclick="calculateLoan()">Calculate</button>
+        </form>
+        <p id="result"></p>
+    </section>
+
+  
+    <section id="contact">
+        <h2>Contact Us for a Free Consultation</h2>
+        <form id="contactForm">
+            <label>Name: <input type="text" id="userName" required></label>
+            <label>Email: <input type="email" id="userEmail" required></label>
+            <label>Message: <textarea id="userMessage" required></textarea></label>
+            <button type="button" onclick="sendEmail()">Send Message</button>
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Financial Advisory Services. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Financial Advisory Service</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#calculators">Calculators</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Welcome to Our Financial Advisory Service</h2>
+        <p>
+            Welcome to FAS, where your financial well-being is our top priority. We are a team of dedicated financial advisors committed to helping you achieve your financial goals and secure your future. With years of experience in the financial industry, we offer personalized advice and a range of services tailored to meet your unique needs.
+            </p>
+          <h1>Our Mission</h1>
+            
+          <p>  Our mission is to empower individuals and businesses to make informed financial decisions. We believe that everyone deserves access to expert financial guidance, and we strive to provide our clients with the knowledge and tools they need to succeed.
+        </p>
+            
+             <h2>Why Choose Us?</h2>
+             <p>
+             Expertise: Our team of advisors has extensive experience and knowledge in the financial industry.
+             Personalized Service: We take the time to understand your unique needs and provide tailored advice.
+             Commitment: We are dedicated to helping you achieve your financial goals and providing ongoing support.
+            </p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>At FAS, we offer a comprehensive suite of financial services, including:</p>
+          <ul>
+            <li>Financial Planning: Customized plans to help you reach your financial goals.</li>
+            <li> Investment Advice: Strategies to grow your wealth and secure your future.</li>
+            <li>Loan and Interest Calculations: Tools to help you understand and manage your loans.</li>
+            <li>Retirement Planning: Guidance to ensure a comfortable and secure retirement.</li>
+        </ul> 
+    </section>
+
+    <section id="calculators">
+        <h2>Loan and Interest Calculators</h2>
+        <form id="loanCalculator">
+            <label for="principal">Principal Amount:</label>
+            <input type="number" id="principal" name="principal" required>
+            <label for="rate">Interest Rate (%):</label>
+            <input type="number" id="rate" name="rate" required>
+            <label for="time">Time (years):</label>
+            <input type="number" id="time" name="time" required>
+            <button type="button" onclick="calculateLoan()">Calculate</button>
+        </form>
+        <p id="result"></p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p> 
+            Ready to take control of your financial future? Contact us today to schedule a free initial consultation and start your journey towards financial success.
+            </p>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <section>
+    <footer>
+        <p>&copy; 2024 Financial Advisory Services. All rights reserved.</p>
+    </footer>
+</section>
+    <script src="scripts.js"></script>
+</body>
+</html>
