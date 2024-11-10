@@ -1,57 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial Advisory Service</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
-</head>
-<body>
-    
-    <header>
-        <h1>Financial Advisory Services</h1>
-        <p>Your partner in financial success</p>
-    </header>
-
-    
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>We provide expert financial advice to help you manage loans, investments, and retirement planning.</p>
-    </section>
-
-    
-    <section id="calculator">
-        <h2>Loan and Interest Calculator</h2>
-        <form id="loanCalculator">
-            <label>Loan Amount: <input type="number" id="loanAmount" required></label>
-            <label>Interest Rate (%): <input type="number" id="interestRate" step="0.01" required></label>
-            <label>Loan Duration (Years): <input type="number" id="loanDuration" required></label>
-            <button type="button" onclick="calculateLoan()">Calculate</button>
-        </form>
-        <p id="result"></p>
-    </section>
-
-  
-    <section id="contact">
-        <h2>Contact Us for a Free Consultation</h2>
-        <form id="contactForm">
-            <label>Name: <input type="text" id="userName" required></label>
-            <label>Email: <input type="email" id="userEmail" required></label>
-            <label>Message: <textarea id="userMessage" required></textarea></label>
-            <button type="button" onclick="sendEmail()">Send Message</button>
-        </form>
-    </section>
-
-    
-    <footer>
-        <p>&copy; 2024 Financial Advisory Services. All rights reserved.</p>
-    </footer>
-
-    <script src="scripts.js"></script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,6 +37,7 @@
     </section>
     <section id="services">
         <h2>Our Services</h2>
+        <p>We provide expert financial advice to help you manage loans, investments, and retirement planning.</p>
         <p>At FAS, we offer a comprehensive suite of financial services, including:</p>
           <ul>
             <li>Financial Planning: Customized plans to help you reach your financial goals.</li>
@@ -100,39 +47,49 @@
         </ul> 
     </section>
 
+ ]
+
     <section id="calculators">
         <h2>Loan and Interest Calculators</h2>
         <form id="loanCalculator">
-            <label for="principal">Principal Amount:</label>
-            <input type="number" id="principal" name="principal" required>
-            <label for="rate">Interest Rate (%):</label>
-            <input type="number" id="rate" name="rate" required>
-            <label for="time">Time (years):</label>
-            <input type="number" id="time" name="time" required>
+            <div class="form-group">
+                <label for="principal">Principal Amount:</label>
+                <input type="number" id="principal" name="principal" required>
+            </div>
+            <div class="form-group">
+                <label for="rate">Interest Rate (%):</label>
+                <input type="number" id="rate" name="rate" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time (years):</label>
+                <input type="number" id="time" name="time" required>
+            </div>
+            <div class="button-container">
             <button type="button" onclick="calculateLoan()">Calculate</button>
+        </div>
         </form>
         <p id="result"></p>
     </section>
+    
+
+
     <section id="contact">
-        <h2>Contact Us</h2>
+        <h2>Contact Us for a Free Consultation</h2>
         <p> 
             Ready to take control of your financial future? Contact us today to schedule a free initial consultation and start your journey towards financial success.
             </p>
         <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
+            <label for="name">Name: <input type="text" id="userName" required></label>
+            <label for="email">Email: <input type="email" id="userEmail" required></label>
+            <label for="message">Message: <textarea id="userMessage" required></textarea></label>
+            <button type="button" onclick="sendEmail()">Send Message</button>
         </form>
     </section>
-    <section>
+
     <footer>
         <p>&copy; 2024 Financial Advisory Services. All rights reserved.</p>
     </footer>
-</section>
+
     <script src="scripts.js"></script>
 </body>
 </html>
